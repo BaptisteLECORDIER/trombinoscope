@@ -1,0 +1,491 @@
+$white : #ffffff;
+$red : #dc3434;
+$blue : #2C6DDC;
+$green : #5bdc2c;
+$gray : #707070;
+$light-gray2 : #999999;
+$light-gray : #EEEEEE;
+$black : #000000;
+$yellow : #dae71f;
+$purple :#9a1768;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: $gray;
+    background-color: $light-gray;
+
+}
+
+.classes-body .grid-card {
+    margin: 20px;
+}
+
+
+
+.flex {
+    &-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-column {
+        flex-direction: column;
+    }
+}
+
+.margin-top-g {
+    margin-top: 5px;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.txt {
+    &-sm {
+        font-size: 10px;
+    }
+
+    &-md {
+        font-size: 15px;
+    }
+
+    &-l {
+        font-size: 20px;
+    }
+    &-bold {
+        font-weight: bold;
+    }
+    &-white {
+        color: $white;
+    }
+    &-black {
+        color: $black;
+    }
+    &-red {
+        color: $red;
+    }
+    &-blue {
+        color: $blue;
+    }
+    &-green {
+        color: $green;
+    }
+    &-yellow {
+        color: $yellow;
+    }
+    &-purple {
+        color: $purple;
+    }
+    &-gray {
+        color: $gray;
+    }
+    &-light-gray {
+        color: $light-gray;
+    }
+    &-deco-underline {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+.nav {
+    &-white {
+        background-color: $white;
+    }
+    &-black {
+        background-color: $black;
+    }
+    &-red {
+        background-color: $red;
+    }
+    &-blue {
+        background-color: $blue;
+    }
+    &-green {
+        background-color: $green;
+    }
+    &-yellow {
+        background-color: $yellow;
+    }
+    &-purple {
+        background-color: $purple;
+    }
+    &-gray {
+        background-color: $gray;
+    }
+    &-light-gray {
+        background-color: $light-gray;
+    }
+
+
+    &-f-gray {
+        color: $gray;
+        & a {
+            color: $gray;
+        }
+    }
+    &-f-white {
+        color: $white;
+        & a {
+            color: $white;
+        }
+    }
+    &-f-black {
+        color: $black;
+        & a {
+            color: $black;
+        }
+    }
+
+    &-first {
+        height: 52px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &-second {
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        
+        & ul {
+
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            & a {
+                text-decoration: none;
+            }
+
+        }
+    }
+
+    &__logo {
+
+        width: 52px;
+    }
+}
+
+.center {
+    display:flex ;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-card {
+
+
+    gap: 20px;
+    
+}
+
+
+.card-btn {
+    box-shadow: rgba($color: $black, $alpha: 0.2) 3px 3px 6px;
+
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    &__img {
+        width: 100%;
+        height: 100%;
+        & img {
+            width: 100%;
+            
+        }
+    }
+    &__txt {
+        background-color: rgba($color: $black, $alpha: 0.5);
+        color: $white;
+        width: 350px;
+        height: 30px;
+        position: relative;
+        bottom: 30px;
+        & p {
+            position: relative;
+            top: 8px;
+            left: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden; 
+
+            white-space: nowrap;
+        }
+        
+    }
+}
+
+.no-a-style {
+    text-decoration: none;
+}
+
+.form-dynamic {
+    ::placeholder {
+        color: $gray;
+    }
+
+    input {
+        background: none;
+        padding: 5px;
+        width: 250px;
+    
+        border: solid 0px ;
+        border-bottom: solid 1px $gray;
+        
+        
+    }
+    label {
+        padding: 5px;
+        position: relative;
+
+    }
+}
+
+.form-dynamic-focus {
+    ::placeholder {
+        color: $blue;
+    }
+
+    input {
+
+        border-bottom: solid 1px $blue;
+        
+        
+    }
+    label {
+        color: $blue;
+
+    }
+}
+
+.form-danger {
+    ::placeholder {
+        color: $red;
+    }
+    input {
+        border-bottom: solid 1px $red;
+        
+    }
+    label {
+        color : $red;
+    }
+}
+
+
+:focus {
+    outline: none;
+   }
+
+.items {
+    &-in-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-y-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.card-index {
+    background-color: $white;
+    min-height: 100px;
+    width: 300px;
+    margin: 40px;
+    padding: 10px;
+    & h1 {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
+
+@keyframes btn-hover-arrow {
+    from {
+        opacity: 0;
+        right: 20px;
+    }
+    to {
+        opacity: 100;
+        right: -10px;
+    }
+}
+
+@keyframes btn-rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+
+.btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    
+    &-rad {
+        border-radius: 5000px;
+    }
+
+    &-rotate:hover > * {
+        animation-name: btn-rotate;
+        animation-duration: 0.15s;
+        animation-fill-mode: forwards
+    }
+
+    &-arrow {
+        
+        & .btn__arrow {
+            position: relative;
+            opacity: 0;
+        }
+        &:hover .btn__arrow {
+            top: 2px;
+            animation-name: btn-hover-arrow;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards
+        }
+    }
+    &-primary {
+        background-color: $gray;
+        color: $white;
+        &:hover {
+            background-color: $light-gray2;
+        }
+    }
+    
+    & p {
+        margin-right: 0px;
+    }
+}
+
+.login img {
+    height: 10px;
+}
+
+
+input {
+    padding: 3px;
+}
+
+form > * {
+    margin: 5px;
+}
+
+.search-bar {
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    
+    border: $gray 1px solid;
+    & .btn {
+        padding: 10px;
+
+    }
+    & input {
+        border: none;
+        width: 200px;
+        padding-left: 20px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.searchbar-dynamic-focus {
+    border: $blue 1px solid;
+    & input::placeholder {
+        color: $blue;
+    }
+}
+
+.btn-search-bar-cross {
+    overflow: hidden;
+}
+
+
+@keyframes search-bar-cross-not-visible {
+    from {
+        width: 300px;
+    }
+    to {
+        width: 270px;
+    }
+}
+
+@keyframes search-bar-cross-visible {
+    from {
+        width: 270px;
+    }
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes btn-search-bar-cross-visible {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 30px;
+    }
+}
+
+@keyframes btn-search-bar-cross-not-visible {
+    from {
+        width: 30px;
+    }
+    to {
+        width: 0px;
+    }
+}
+
+.search-bar-cross-not-visible {
+    animation-name: search-bar-cross-not-visible;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+    & .btn-search-bar-cross {
+        animation-name: btn-search-bar-cross-not-visible;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    
+}
+
+.search-bar-cross-visible {
+    animation-name: search-bar-cross-visible;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    & .btn-search-bar-cross {
+        animation-name: btn-search-bar-cross-visible;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+

@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  background-color: #EEEEEE;
+}
+
+.classes-body .grid-card {
+  margin: 20px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.margin-top-g {
+  margin-top: 5px;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.txt-sm {
+  font-size: 10px;
+}
+.txt-md {
+  font-size: 15px;
+}
+.txt-l {
+  font-size: 20px;
+}
+.txt-bold {
+  font-weight: bold;
+}
+.txt-white {
+  color: #ffffff;
+}
+.txt-black {
+  color: #000000;
+}
+.txt-red {
+  color: #dc3434;
+}
+.txt-blue {
+  color: #2C6DDC;
+}
+.txt-green {
+  color: #5bdc2c;
+}
+.txt-yellow {
+  color: #dae71f;
+}
+.txt-purple {
+  color: #9a1768;
+}
+.txt-gray {
+  color: #707070;
+}
+.txt-light-gray {
+  color: #EEEEEE;
+}
+.txt-deco-underline {
+  text-decoration: underline;
+}
+
+.nav-white {
+  background-color: #ffffff;
+}
+.nav-black {
+  background-color: #000000;
+}
+.nav-red {
+  background-color: #dc3434;
+}
+.nav-blue {
+  background-color: #2C6DDC;
+}
+.nav-green {
+  background-color: #5bdc2c;
+}
+.nav-yellow {
+  background-color: #dae71f;
+}
+.nav-purple {
+  background-color: #9a1768;
+}
+.nav-gray {
+  background-color: #707070;
+}
+.nav-light-gray {
+  background-color: #EEEEEE;
+}
+.nav-f-gray {
+  color: #707070;
+}
+.nav-f-gray a {
+  color: #707070;
+}
+.nav-f-white {
+  color: #ffffff;
+}
+.nav-f-white a {
+  color: #ffffff;
+}
+.nav-f-black {
+  color: #000000;
+}
+.nav-f-black a {
+  color: #000000;
+}
+.nav-first {
+  height: 52px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-second {
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-second ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav-second ul a {
+  text-decoration: none;
+}
+.nav__logo {
+  width: 52px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-card {
+  gap: 20px;
+}
+
+.card-btn {
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 6px;
+  width: 350px;
+  height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card-btn__img {
+  width: 100%;
+  height: 100%;
+}
+.card-btn__img img {
+  width: 100%;
+}
+.card-btn__txt {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 350px;
+  height: 30px;
+  position: relative;
+  bottom: 30px;
+}
+.card-btn__txt p {
+  position: relative;
+  top: 8px;
+  left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.no-a-style {
+  text-decoration: none;
+}
+
+.form-dynamic ::placeholder {
+  color: #707070;
+}
+.form-dynamic input {
+  background: none;
+  padding: 5px;
+  width: 250px;
+  border: solid 0px;
+  border-bottom: solid 1px #707070;
+}
+.form-dynamic label {
+  padding: 5px;
+  position: relative;
+}
+
+.form-dynamic-focus ::placeholder {
+  color: #2C6DDC;
+}
+.form-dynamic-focus input {
+  border-bottom: solid 1px #2C6DDC;
+}
+.form-dynamic-focus label {
+  color: #2C6DDC;
+}
+
+.form-danger ::placeholder {
+  color: #dc3434;
+}
+.form-danger input {
+  border-bottom: solid 1px #dc3434;
+}
+.form-danger label {
+  color: #dc3434;
+}
+
+:focus {
+  outline: none;
+}
+
+.items-in-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.items-y-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-index {
+  background-color: #ffffff;
+  min-height: 100px;
+  width: 300px;
+  margin: 40px;
+  padding: 10px;
+}
+.card-index h1 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+@keyframes btn-hover-arrow {
+  from {
+    opacity: 0;
+    right: 20px;
+  }
+  to {
+    opacity: 100;
+    right: -10px;
+  }
+}
+@keyframes btn-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-rad {
+  border-radius: 5000px;
+}
+.btn-rotate:hover > * {
+  animation-name: btn-rotate;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+}
+.btn-arrow .btn__arrow {
+  position: relative;
+  opacity: 0;
+}
+.btn-arrow:hover .btn__arrow {
+  top: 2px;
+  animation-name: btn-hover-arrow;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.btn-primary {
+  background-color: #707070;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #999999;
+}
+.btn p {
+  margin-right: 0px;
+}
+
+.login img {
+  height: 10px;
+}
+
+input {
+  padding: 3px;
+}
+
+form > * {
+  margin: 5px;
+}
+
+.search-bar {
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border: #707070 1px solid;
+}
+.search-bar .btn {
+  padding: 10px;
+}
+.search-bar input {
+  border: none;
+  width: 200px;
+  padding-left: 20px;
+}
+.search-bar input:focus {
+  outline: none;
+}
+
+.searchbar-dynamic-focus {
+  border: #2C6DDC 1px solid;
+}
+.searchbar-dynamic-focus input::placeholder {
+  color: #2C6DDC;
+}
+
+.btn-search-bar-cross {
+  overflow: hidden;
+}
+
+@keyframes search-bar-cross-not-visible {
+  from {
+    width: 300px;
+  }
+  to {
+    width: 270px;
+  }
+}
+@keyframes search-bar-cross-visible {
+  from {
+    width: 270px;
+  }
+  to {
+    width: 300px;
+  }
+}
+@keyframes btn-search-bar-cross-visible {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 30px;
+  }
+}
+@keyframes btn-search-bar-cross-not-visible {
+  from {
+    width: 30px;
+  }
+  to {
+    width: 0px;
+  }
+}
+.search-bar-cross-not-visible {
+  animation-name: search-bar-cross-not-visible;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.search-bar-cross-not-visible .btn-search-bar-cross {
+  animation-name: btn-search-bar-cross-not-visible;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.search-bar-cross-visible {
+  animation-name: search-bar-cross-visible;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.search-bar-cross-visible .btn-search-bar-cross {
+  animation-name: btn-search-bar-cross-visible;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/*# sourceMappingURL=themes.css.map */
